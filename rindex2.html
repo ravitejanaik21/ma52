@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as Donor</title>
+    <link rel="stylesheet" href="style3a.css">
+    <script src="script3a.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index3a21.html">Home</a>
+        <a href="sindex2.html">Search Donor</a>
+        <a href="rindex2.html">Register as Donor</a>
+        <a href="admin21.html">Admin</a>
+    </nav>
+
+    <h1>Register as a Donor</h1>
+    
+    <button class="toggle-btn" onclick="toggleSection('register-section')">Register as Donor</button>
+    <section id="register-section" class="collapsible">
+        <form id="register-form" onsubmit="registerDonor(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="donorBloodGroup">Blood Group:</label>
+            <select id="donorBloodGroup">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            
+            <label for="donorLocation">Location:</label>
+            <input type="text" id="donorLocation" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
